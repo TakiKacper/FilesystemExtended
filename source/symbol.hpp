@@ -1,5 +1,6 @@
 #pragma once
 #include <filesystem>
+#include <vector>
 
 namespace filesystem_extended
 {
@@ -28,7 +29,7 @@ namespace filesystem_extended
 		expand_symbol
 		replaces symbol with the path assigned to it
 	*/
-	std::filesystem::path expand_symbol(std::string path_with_symbol, std::initializer_list<symbol*> available_symbols)
+	std::filesystem::path expand_symbol(std::string path_with_symbol, std::vector<symbol*> available_symbols)
 	{
 		size_t symbol_end = path_with_symbol.find_first_of('/');
 
