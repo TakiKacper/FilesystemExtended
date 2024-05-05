@@ -25,7 +25,5 @@ int main()
 	{
 		std::cout << exc.what();
 	}
-
-	return 0;
 }
 ```
